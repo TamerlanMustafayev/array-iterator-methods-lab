@@ -78,4 +78,56 @@ console.log('Exercise 1 My Result: ', veryOldInventors)
 //     ]
 // )
 
+
+
+/*
+Exercise 2: Array.prototype.map()
+
+Map the array of inventors into a new array. This new array should only contain
+objects with the inventors' first and last names.
+
+- For each inventor, return an object in this format: 
+  { first: "First Name", last: "Last Name" }.
+- The new array should be a collection of these objects, each representing an 
+  inventor with only their first and last names.
+
+Hint: Return a new object literal from the callback that looks like:
+      { first: "First Name", last: "Last Name" }
+*/
+
+let inventorNames = []
+
+// Complete the exercise in the space below:
+
+inventors.map((inventor) => {
+    // I made this empty object to be able to push first and last names as an object into the inventorNames object
+    inventorObj = {} 
+    inventorObj.first = inventor.first
+    inventorObj.last = inventor.last
+    inventorNames.push(inventorObj)
+})
+
+
+
+// Check your work:
+console.log('Exercise 2 my result: ', inventorNames)
+// console.log(
+//   'Exercise 2 correct result: ',
+//   [
+//     { first: 'Albert', last: 'Einstein' },
+//     { first: 'Isaac', last: 'Newton' },
+//     { first: 'Galileo', last: 'Galilei' },
+//     { first: 'Marie', last: 'Curie' },
+//     { first: 'Johannes', last: 'Kepler' },
+//     { first: 'Nicolaus', last: 'Copernicus' },
+//     { first: 'Max', last: 'Planck' },
+//     { first: 'Katherine', last: 'Blodgett' },
+//     { first: 'Ada', last: 'Lovelace' },
+//     { first: 'Sarah E.', last: 'Goode' },
+//     { first: 'Lise', last: 'Meitner' },
+//     { first: 'Hanna', last: 'Hammarström' }
+//   ]
+// )
+
+
   
