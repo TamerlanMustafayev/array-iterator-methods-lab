@@ -101,7 +101,7 @@ let inventorNames = []
 
 inventors.map((inventor) => {
     // I made this empty object to be able to push first and last names as an object into the inventorNames object
-    inventorObj = {} 
+    let inventorObj = {} 
     inventorObj.first = inventor.first
     inventorObj.last = inventor.last
     inventorNames.push(inventorObj)
